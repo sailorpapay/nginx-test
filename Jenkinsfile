@@ -6,7 +6,7 @@ node {
     }
 
     stage('Build image') {
-        app = docker.build("nginx_sources/webapp")
+        app = docker.build("sailorpapay/jenkins-nginx")
     }
 
     stage('Test image') {
